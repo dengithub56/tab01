@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,9 +10,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.tabs-wrapper {}
+.tabs-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
 
 .tabs-nav {}
 
@@ -27,30 +34,40 @@ body {
     background: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    cursor: pointer;
+    color: #fff;
 }
 
 .tabs-item__1 {
     border-left: 1px solid rgb(48, 24, 134);
     border-top: 1px solid rgb(48, 24, 134);
     border-right: 1px solid rgb(48, 24, 134);
+    background: rgb(48, 24, 134);
+    ;
 }
 
 .tabs-item__2 {
     border-left: 1px solid rgb(24, 134, 79);
     border-top: 1px solid rgb(24, 134, 79);
     border-right: 1px solid rgb(24, 134, 79);
+    background: rgb(24, 134, 79);
+    ;
 }
 
 .tabs-item__3 {
     border-left: 1px solid rgb(201, 189, 20);
     border-top: 1px solid rgb(201, 189, 20);
     border-right: 1px solid rgb(201, 189, 20);
+    background: rgb(201, 189, 20);
+    ;
 }
 
 .tabs-item__4 {
     border-left: 1px solid rgb(201, 41, 20);
     border-top: 1px solid rgb(201, 41, 20);
     border-right: 1px solid rgb(201, 41, 20);
+    background: rgb(201, 41, 20);
+    ;
 }
 
 .tabs-item+.tabs-item {
@@ -61,34 +78,38 @@ body {
     margin-bottom: -1px;
 }
 
-.tabs-content {}
+.tabs-content {
+    width: 825px;
+}
 
 .tab {
     display: none;
-    font-size: 1.5rem;
-    color: rgb(22, 22, 22);
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 5px 15px;
+    width: 100%;
 }
 
 .tab.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: block;
     height: 150px;
 }
 
 .tab-1 {
-    border: 1px solid rgb(48, 24, 134);
+    background: rgb(48, 24, 134);
 }
 
 .tab-2 {
-    border: 1px solid rgb(24, 134, 79);
+    background: rgb(24, 134, 79);
+    ;
 }
 
 .tab-3 {
-    border: 1px solid rgb(201, 189, 20);
+    background: rgb(201, 189, 20);
+    ;
 }
 
 .tab-4 {
-    border: 1px solid rgb(201, 41, 20);
+    background: rgb(201, 41, 20);
+    ;
 }
